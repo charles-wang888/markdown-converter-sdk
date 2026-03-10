@@ -3,13 +3,13 @@ requires = ["setuptools>=61", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "docling-sdk"
-version = "0.1.0"
+name = "markdown-converter-sdk"
+version = "1.0.0"
 description = "文档转 Markdown 的 Python SDK，支持 PDF/DOCX/PPTX/XLSX，可配置 OCR"
 readme = "README.md"
 requires-python = ">=3.9"
 license = { text = "MIT" }
-authors = [{ name = "Docling SDK" }]
+authors = [{ name = "王巍巍（weiweiw404@gmail.com)" }]
 keywords = ["docling", "pdf", "docx", "pptx", "xlsx", "markdown", "ocr", "document-conversion"]
 classifiers = [
     "Development Status :: 3 - Alpha",
@@ -40,7 +40,7 @@ dev = [
 ]
 
 [project.urls]
-Repository = "https://github.com/your-org/docling-sdk"
+Repository = "https://github.com/charles-wang888/markdown-converter-sdk"
 
 [tool.setuptools.packages.find]
 where = ["."]

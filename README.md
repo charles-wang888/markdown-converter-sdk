@@ -334,6 +334,34 @@ python main.py
 
 可根据需要修改各用例内部的路径（如 `tests/raw_file/xxx.pdf`）或切换为串行单用例调试。
 
+
+## 引用 (Citation)
+
+若在学术或技术报告中使用了本 SDK，欢迎按以下方式引用：
+
+**纯文本：**
+
+```text
+MarkDown Converter SDK. https://github.com/charles-wang888/markdown-converter-sdk. Version 1.0.0.
+```
+
+**BibTeX：**
+
+```bibtex
+@software{markdown_converter_sdk2026,
+  title = {MarkDown Converter SDK},
+  author = {王巍巍},
+  year = {2026},
+  version = {1.0.0},
+  url = {https://github.com/charles-wang888/markdown-converter-sdk},
+  note = {Unified document-to-Markdown conversion with Docling and MinerU.}
+}
+```
+
+本 SDK 基于 [Docling](https://github.com/docling-project/docling) 与 [MinerU](https://github.com/opendatalab/MinerU)，引用时也可同时注明所采用的底层引擎。
+
+
+
 ## 许可证
 
 MIT
