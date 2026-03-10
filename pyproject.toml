@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "docling-sdk"
+version = "0.1.0"
+description = "文档转 Markdown 的 Python SDK，支持 PDF/DOCX/PPTX/XLSX，可配置 OCR"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Docling SDK" }]
+keywords = ["docling", "pdf", "docx", "pptx", "xlsx", "markdown", "ocr", "document-conversion"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Text Processing :: Markup",
+]
+dependencies = [
+    "docling>=2.0",
+    "filetype>=1.2.0",
+    "tqdm>=4.60.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+    "python-docx>=0.8.11",
+    "python-pptx>=0.6.21",
+    "openpyxl>=3.0",
+    "reportlab>=4.0",
+    "pypdf>=3.0",
+]
+
+[project.urls]
+Repository = "https://github.com/your-org/docling-sdk"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["core", "core*", "models", "models*", "utils", "utils*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+# 消除 pytest-asyncio 的 PytestDeprecationWarning：显式指定异步 fixture 的 loop 作用域
+asyncio_default_fixture_loop_scope = "function"

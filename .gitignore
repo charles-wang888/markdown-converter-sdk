@@ -1,0 +1,43 @@
+# 测试与输出
+.pytest_cache/
+TEST_OUTPUT.txt
+tests/raw_file_output/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# 虚拟环境
+.venv/
+venv/
+ENV/
+env/
+
+# IDE（可选：若希望提交 .idea 可删掉下面两行）
+.idea/
+*.iml
+
+# 系统与杂项
+.DS_Store
+Thumbs.db
+*.log
+*.swp
+*~
